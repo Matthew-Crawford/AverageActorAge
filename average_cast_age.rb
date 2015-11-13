@@ -39,9 +39,4 @@ open(url) do |rss|
 		movie_titles << title_string
 	end
 	puts movie_titles
-	puts movie_titles.class
 end
-
-# open('top10boxoffice.rss', 'wb') do |file| 
-# 	file << open('http://www.fandango.com/rss/top10boxoffice.rss').read
-# end
