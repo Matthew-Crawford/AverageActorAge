@@ -1,13 +1,13 @@
 require 'Date'
 class Cast_Member
-	attr_accessor :name, :dob_day, :dob_month, :dob_year, :movie
+	attr_accessor :name, :dob_day, :dob_month, :dob_year
 
-	def initialize(name, dob_year, dob_month, dob_day, movie)
+	def initialize(name, link, dob_year=0, dob_month=0, dob_day=0)
 		@name = name
+		@link = link
 		@dob_day = dob_day
 		@dob_month = Date::MONTHNAMES.index(dob_month) 
 		@dob_year = dob_year
-		@movie = movie
 	end
 
 	def calculate_age
